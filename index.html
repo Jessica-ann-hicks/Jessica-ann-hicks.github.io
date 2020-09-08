@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Jessica's Amazing 1st Website!</title>
+        <style>
+            body {
+        background: radial-gradient(black, blue, black);
+        color: #ffffff;
+        padding: 10px;
+        font-family: arial;
+    }
+    #all-contents {
+        max-width: 800px;
+        margin: auto;
+    }
+
+    /* navigation menu */
+    nav {
+        background: radial-gradient(#c71585, #660066) ;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        display: flex;
+        padding: 10px;
+        border-radius: 50px 20px;
+    }
+    h1 {
+        display: flex;
+        align-items: center;
+        color: white;
+        flex: 1;
+        margin: 0;
+    }
+    #nav-ul {
+        list-style-image: none;
+    }
+    .nav-li {
+        display: inline-block;
+        padding: 0 10px;
+    }
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    /* main container area beneath menu */
+    main {
+        background: radial-gradient(#4d004d, black);
+        display: flex;
+    }
+    .sidebar {
+        margin-right: 25px;
+        padding: 10px;
+    }
+    .sidebar-img {
+        width: 200px;
+        border-style: ridge;
+        border-color: green #006666 ;
+    }
+    .content {
+        flex: 1;
+        padding: 15px;
+    }
+    #interests {
+        border: 4px silver ridge;
+        padding: 8px;
+    }
+    h2, h3 {
+        margin: 0px;
+    }
+        </style>
+    </head>
+    
+    <body>
+        <!-- All content goes here -->
+    <div id="all-contents"> 
+        <nav>
+            <h1>Jessica's Spectacular Website</h1>
+            <ul id="nav-ul">
+                <li class="nav-li">
+                  <a href="index.html"> Home </a>
+                </li>
+                <li class="nav-li">
+                  <a href="portfolio.html"> Portfolio </a>
+                </li>
+            </ul>
+        </nav>
+
+        <main>
+            <!-- Sidebar section -->
+            <div class="sidebar">
+                <img class="sidebar-img" src="https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/55473444_10213325970690507_1221694324836663296_n.jpg?_nc_cat=110&_nc_sid=174925&_nc_ohc=3LdxdqRFGccAX8VDL0I&_nc_ht=scontent-dfw5-1.xx&oh=b0c04e21ddc1559b958ed4add9be1b07&oe=5F78410B">
+            </div>
+
+            <!-- Content section -->
+            <div class="content">
+                <h2>Jessica</h2>
+                <p>Student of Software engineering at OperationSpark</p>
+                <!-- Interests section -->
+                <div id="interests">
+                    <h3>Interests</h3>
+                    <ul>
+                        <li>Coding</li>
+                        <li>Creating</li>
+                        <li>Spiritual Growth</li>
+                    </ul>
+                </div>
+            </div> 
+        </main>
+    </div>
+    </body>
+</html>
