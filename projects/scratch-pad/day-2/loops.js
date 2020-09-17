@@ -49,7 +49,21 @@ function printArrayValuesInReverse(array) {
  */
 function getObjectKeys(object) {
   // YOUR CODE BELOW HERE //
+  // STILL Planning--- Using For in Loop to access keys
   
+  //First make a new var to be "Array container"
+  //use a for in loop to access the keys within the object paramter
+  //In the curly braces of the for in loop, also called Code Block, --
+  //-- enter in . push to push the key of the  for in loop into the --
+  //-- var array
+  //lastly return array which now has the object keys inside
+   var objectArray= [];
+  // use for in loop to iterate through object items
+  for( var key in object){
+  // push only the keys onto the empty array
+    objectArray.push(key);
+  }
+  return objectArray;
   
   
   

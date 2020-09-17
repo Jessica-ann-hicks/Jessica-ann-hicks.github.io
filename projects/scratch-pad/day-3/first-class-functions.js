@@ -14,6 +14,14 @@
 function createGreaterThanFilter(base) {
     // YOUR CODE BELOW HERE //
     
+    return function (value) {
+        if (value > base){
+            return true;
+        } else {
+            return false;
+        }
+    };
+    
     
     
     
@@ -28,6 +36,14 @@ function createGreaterThanFilter(base) {
 function createLessThanFilter(base) {
     // YOUR CODE BELOW HERE //
     
+     return function (value) {
+        if (value < base){
+            return true;
+        } else {
+            return false;
+        }
+    };
+    
     
     
     
@@ -41,8 +57,22 @@ function createLessThanFilter(base) {
  */
 function createStartsWithFilter(startsWith) {
     // YOUR CODE BELOW HERE //
+    // Created a new function inside createStartsWith to modify it, to test for FirstLetter 
+   return function (character) {
+        //used if else statment to create what the function will access
+        // indexed character at 0 to access the first letter 
+        //used strictly equal to compare character and stratsWith
+        //used .toUppercase() to match the case sensitivity of strictly equal
+        
+        if (character[0].toUpperCase() === startsWith.toUpperCase()) {
+            return true;
+        } else {
+            return false;
+            
+        }
+     
     
-    
+   };
     
     
     // YOUR CODE ABOVE HERE //
@@ -56,8 +86,18 @@ function createStartsWithFilter(startsWith) {
 function createEndsWithFilter(endsWith) {
     // YOUR CODE BELOW HERE //
     
+    // Almost the same as above prompt
+     return function (character) {
+       
+       if (character[character.length-1].toLowerCase() === endsWith.toLowerCase()) {
+           return true;
+       } else {
+           return false;
+       }
     
+   };
     
+  
     
     // YOUR CODE ABOVE HERE //
 }
@@ -72,6 +112,19 @@ function createEndsWithFilter(endsWith) {
 function modifyStrings(strings, modify) {
     // YOUR CODE BELOW HERE //
     
+    //create a variable to hold an array for the modified strings
+    var arrayOfStrings = [];
+    //using a for loop to access all values of the string... Where [i] becomes--
+    //-- the values of the string. 
+    for (var i = 0; i < strings.length; i ++) {
+    //pushing the modified strings values[i] inside the new array arrayOfStrings
+        arrayOfStrings.push(modify(strings[i]));
+    }
+    
+   
+   
+   //reeturn 
+    return arrayOfStrings;
     
     
     
@@ -90,7 +143,13 @@ function modifyStrings(strings, modify) {
 function allStringsPass(strings, test) {
     // YOUR CODE BELOW HERE //
     
-    
+   var arrayPass = [];
+   
+   for (var i = 0; i < strings.length; i++) {
+       arrayPass.push(test(strings[i]));
+   } if (strings[i] === test){
+       return true;
+   }else return false;
     
     
     // YOUR CODE ABOVE HERE //

@@ -12,7 +12,12 @@
 */
 function fizzBuzz() {
     // YOUR CODE GOES BELOW HERE //
+//Using a for loop to access 1-100
 
+for (var i = 0; i < 100; i++) {
+    //use % to access multiples of a number
+    
+}
 
 
     // YOUR CODE GOES ABOVE HERE //
