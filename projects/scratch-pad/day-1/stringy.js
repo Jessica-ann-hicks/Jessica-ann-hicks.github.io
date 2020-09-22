@@ -112,6 +112,7 @@ function beginsWith(string, char) {
  *      ensure uppercase and lowercase can be compared equally?
  */
 function endsWith(string, char) {
+    
     // YOUR CODE BELOW HERE //
 
 
@@ -126,7 +127,7 @@ function endsWith(string, char) {
  */
 function concat(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-
+    return stringOne + stringTwo;
 
 
     // YOUR CODE ABOVE HERE //
@@ -162,6 +163,11 @@ function join(stringOne, stringTwo) {
 function longest(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
 
+    if (stringOne[-1] >= stringTwo[-1]){
+        return stringOne;
+    } else {
+        return stringTwo;
+    }
 
 
     // YOUR CODE ABOVE HERE //

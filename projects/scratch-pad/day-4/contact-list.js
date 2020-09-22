@@ -35,6 +35,13 @@
 
 // YOUR CODE GOES BELOW HERE //
 function makeContact(id, nameFirst, nameLast) {
+    // return an Object that has the argument ids as well as values keys matching their names
+    
+    return {
+        id: id,
+        nameFirst: nameFirst,
+        nameLast: nameLast
+    };
 
 } 
 
@@ -43,14 +50,53 @@ function makeContactList() {
     /*
      * You need something here to hold contacts. See length api for a hint:
      */
-    var contacts;
+     
+    /*  First Im going to add all the keys attached to function() so I can visualize how many key:/value functions I have
+       making sure to add commas after each because makeContactList is a collection of key/value pairs, thus an object
+     * 
+     */
+    var contacts = [];
     
     return {
         // we implemented the length api for you //
         length: function() {
             return contacts.length;
+        },
+        /*  Takes a contact Object to be ADDED to the contact-list
+         * First idea: use .push becuase it adds values to the end of an array
+        */
+        addContact: function (contact) {
+            
+            contacts.push(contact);
+            
+        },
+        /* Needs a fullname string to find conact
+            *Must combine firstName and lastName
+            *First idea: use a for loop to search through the contacts array
+        */
+        findContact: function (fullName) {
+            //first must combine name
+            
+            //for loop to search through contacts
+            for (var i = 0; i < contacts.length; i ++) {
+                
+            }
+            return contacts[i];
+        },
+        //
+        
+        removeContact: function (contact) {
+            
+        },
+        //
+        printAllContactNames: function () {
+            
         }
-    }
+        
+        
+        
+        
+    };
 }
 
 
